@@ -1,2 +1,1 @@
-#!/bin/bash
-c projcet from alx
+#0x00. C - Hello, World
