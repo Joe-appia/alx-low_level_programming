@@ -14,28 +14,19 @@
  */
 int main(void)
 {
-	int a, b, c, d;
+	int n = 97;
 
-	for (a = 0; a < 1000; a++)
+	while (n <= 122)
 	{
-		b = a / 100; /* hundreds */
-		c = (a / 10) % 10; /* tens */
-		d = a % 10; /* singles */
-
-		if (b < c && c < d)
+		if (n == 101 || n == 122)
 		{
-			putchar(b + '0');
-			putchar(c + '0');
-			putchar(d + '0');
-
-			if (a < 700)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			n++;
+			continue;
 		}
+	putchar(n);
+	n++;
 	}
-	putchar('\n');
 
-	return (0);
+putchar('\n');
+return (0);
 }
