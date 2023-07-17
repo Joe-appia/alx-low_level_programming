@@ -18,7 +18,7 @@ int main(void)
 
 	while (n <= 122)
 	{
-		if (n == 101 || n == 122)
+		if (n == 101 || n == 123)
 		{
 			n++;
 			continue;
