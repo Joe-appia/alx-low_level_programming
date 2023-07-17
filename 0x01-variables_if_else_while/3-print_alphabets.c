@@ -13,30 +13,20 @@
  */
 int main(void)
 {
-	int a, b, c;
+	int n = 97;
+	int m = 65;
 
-	a = 0;
-
-	while (a < 100)
+	while (n <= 122)
 	{
-		b = a % 10; /* singles digit */
-		c = a / 10; /* doubles digit */
+		putchar(n);
+		n++;
 
-		if (c < b)
-		{
-			putchar(c + '0');
-			putchar(b + '0');
-
-			if (a < 89)
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-
-		a++;
+	}
+	while (m <= 90)
+	{
+		putchar(m);
+		m++;
 	}
 	putchar('\n');
-
 	return (0);
 }
