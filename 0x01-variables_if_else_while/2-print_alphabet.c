@@ -10,25 +10,13 @@
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c;
+	int n = 97;
 
-	for (a = 0; a < 100; a++)
+	while (n <= 122)
 	{
-		b = a / 10;
-		c = a % 10;
-
-		putchar(b + '0');
-		putchar(c + '0');
-
-		if (a < 99)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+		putchar(n);
+		n++;
 	}
 	putchar('\n');
-
 	return (0);
 }
